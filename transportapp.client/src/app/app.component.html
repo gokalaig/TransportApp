@@ -1,0 +1,6 @@
+<app-header></app-header>
+<app-sidenav *ngIf="isLoggedIn"></app-sidenav>
+<div class="content">
+  <app-dashboard *ngIf="isLoggedIn"></app-dashboard>
+  <app-login *ngIf="!isLoggedIn" (loginSuccess)="login()"></app-login>
+</div>
