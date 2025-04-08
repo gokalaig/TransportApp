@@ -24,6 +24,9 @@ builder.Services.AddScoped<IJwtHelper, JwtHelper>();
 builder.Services.AddScoped<ITokenValidator, TokenValidator>();
 // ✅ Register TruckRepository AFTER JwtHelper
 builder.Services.AddScoped<ITruckRepository, TruckRepository>();
+builder.Services.AddScoped<ICommissionBillRepository, CommissionBillRepository>();
+//builder.Services.AddScoped<ICommissionBillService, CommissionBillService>();
+
 
 // Add services to the container
 builder.Services.AddCors(options =>

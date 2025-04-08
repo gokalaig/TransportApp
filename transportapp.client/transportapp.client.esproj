@@ -7,4 +7,8 @@
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\transportapp.client\browser\</BuildOutputFolder>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="src\app\admin\**" />
+    <TypeScriptConfiguration Remove="src\app\admin\**" />
+  </ItemGroup>
 </Project>

@@ -11,9 +11,12 @@
 
   <ItemGroup>
     <Compile Remove="JwtService.cs" />
+    <Compile Remove="Repository\CommissionBillService.cs" />
+    <Compile Remove="Repository\ICommissionBillService.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.13" />
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
       <Version>8.*-*</Version>
